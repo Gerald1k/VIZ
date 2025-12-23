@@ -23,7 +23,14 @@ module.exports = {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name][ext]'
+          filename: (pathData) => {
+            // Favicon файлы в корень, остальные в images/
+            const filename = pathData.filename;
+            if (filename.includes('favicon') || filename.includes('apple-touch-icon')) {
+              return '[name][ext]';
+            }
+            return 'images/[name][ext]';
+          }
         }
       }
     ]

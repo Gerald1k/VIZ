@@ -4,13 +4,15 @@
   "description": "Simple visiting card website on Vue 2",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production && npm run copy-favicon",
+    "copy-favicon": "cp public/favicon.svg dist/ 2>/dev/null || true"
   },
   "dependencies": {
     "vue": "^2.6.14",
     "vue-router": "^3.6.5"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
