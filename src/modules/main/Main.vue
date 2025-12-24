@@ -32,21 +32,21 @@
           <div class="contact-list">
             <a :href="`mailto:${email}`" class="contact-link">
               <span class="contact-icon">✉</span>
-              <span>{{ email }}</span>
-            </a>
+            <span>{{ email }}</span>
+          </a>
             <a :href="`tel:${phone}`" class="contact-link">
-              <span class="contact-icon">📱</span>
-              <span>{{ phone }}</span>
-            </a>
-            <a 
-              v-if="github"
-              :href="github" 
-              target="_blank"
+            <span class="contact-icon">📱</span>
+            <span>{{ phone }}</span>
+          </a>
+          <a 
+            v-if="github"
+            :href="github" 
+            target="_blank"
               class="contact-link"
-            >
-              <span class="contact-icon">💻</span>
-              <span>GitHub</span>
-            </a>
+          >
+            <span class="contact-icon">💻</span>
+            <span>GitHub</span>
+          </a>
           </div>
         </div>
 
@@ -133,9 +133,9 @@
               <h3 class="education-degree">{{ edu.degree }}</h3>
               <p class="education-institution">{{ edu.institution }}</p>
               <p class="education-period">{{ edu.period }}</p>
-            </div>
-          </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
       </main>
     </div>
@@ -152,8 +152,8 @@ export default {
       description: 'Создаю современные веб-приложения и программные решения',
       aboutText: 'Опытный программист с многолетним опытом в разработке программного обеспечения. Специализируюсь на системном программировании, создании веб-приложений и разработке сайтов различной сложности. Работаю с современными технологиями и фреймворками, создаю масштабируемые и производительные решения. Постоянно изучаю новые подходы и инструменты, чтобы предлагать клиентам актуальные и эффективные решения. Владею полным циклом разработки от проектирования архитектуры до реализации и поддержки готовых продуктов.',
       socialLinks: [
-        { name: 'Telegram', icon: '✈', url: 'https://t.me/MihailMsk2025' },
-        { name: 'МАКС', icon: '🔷', url: 'https://max.ru/u/f9LHodD0cOJMvce7BJe1x6FFQi3YlZlYbsCjddrWqRrNzMG723tvI8jgWnQ' }
+        { name: 'Telegram', icon: '💬', url: 'https://t.me/MihailMsk2025' },
+        { name: 'МАКС', icon: '💬', url: 'https://max.ru/u/f9LHodD0cOJMvce7BJe1x6FFQi3YlZlYbsCjddrWqRrNzMG723tvI8jgWnQ' }
       ],
       technologies: [
         'JavaScript', 'TypeScript', 'Vue.js', 'Node.js', 
@@ -643,7 +643,7 @@ export default {
     padding-left: 10px;
     padding-right: 10px;
   }
-
+  
   .app-bar-content {
     padding: 12px 0;
   }
@@ -651,13 +651,13 @@ export default {
   .app-bar-title {
     font-size: 20px;
   }
-
+  
   .app-bar-link {
     width: 36px;
     height: 36px;
     font-size: 16px;
   }
-
+  
   .main-content {
     padding: 30px 20px;
   }
@@ -677,7 +677,7 @@ export default {
   .section-title {
     font-size: 24px;
   }
-
+  
   .experience-header {
     flex-direction: column;
     align-items: flex-start;
